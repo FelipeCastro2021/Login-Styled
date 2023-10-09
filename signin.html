@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page - Sign In</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <aside>
+    <img src="./assets/background.svg">
+  </aside>
+
+  <main>
+    <img src="./assets/person.png" alt="Personal Photo">
+
+    <h1>Sign In</h1>
+
+    <form autocomplete action="cadastro.php">
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" autocomplete="nickname" placeholder="Felipe Castro" required minlength="4" maxlength="25">
+      </div>
+
+      <div class="field">
+        <label for="psw">Password</label>
+        <input type="password" name="password" id="psw" autocomplete="current-password" placeholder="password" required minlength="8" maxlength="35">
+      </div>
+
+      <div class="field_forgot">
+        <a href="#" id="forgot">Forgot Password?</a>
+
+        <a href="index.html" id="signup">Sign Up</a>
+      </div>
+
+      <input type="submit" value="Login">
+    </form>
+  </main>
+</body>
+
+</html>
